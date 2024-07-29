@@ -1,0 +1,152 @@
+// skusim skopirovat sidebar z SBAdmina. Zda sa mi funkcnejsi
+
+// Import Custom SCSS
+//@import "../downloaded/sb-admin/src/scss/global.scss";
+//@import "startbootstrap-sb-admin-2-bs5/scss/global";
+//@import "startbootstrap-sb-admin-2-bs5/scss/mixins";
+//@import "startbootstrap-sb-admin-2-bs5/scss/sb-admin-2";
+
+// Layout
+@import "../downloaded/sb-admin/src/scss/layout/authentication.scss";
+@import "../downloaded/sb-admin/src/scss/layout/dashboard-default.scss";
+@import "../downloaded/sb-admin/src/scss/layout/dashboard-fixed.scss";
+@import "../downloaded/sb-admin/src/scss/layout/error.scss";
+
+
+// Navigation
+@import "../downloaded/sb-admin/src/scss/navigation/nav.scss";
+@import "../downloaded/sb-admin/src/scss/navigation/topnav.scss";
+@import "../downloaded/sb-admin/src/scss/navigation/sidenav/sidenav.scss";
+@import "../downloaded/sb-admin/src/scss/navigation/sidenav/sidenav-dark.scss";
+@import "../downloaded/sb-admin/src/scss/navigation/sidenav/sidenav-light.scss";
+//@import "startbootstrap-sb-admin-2-bs5/scss/navs/sidebar";
+
+.sb-sidenav-menu {
+  .collapse, .collapsing {
+    background-color: $theme-color-dark;
+  }
+
+  .nav-link:hover {
+    color: $white !important;
+  }
+}
+
+#sidebarToggle, #sidebarToggle:active, #sidebarToggle:hover, #sidebarToggle:active, #sidebarToggle:focus, #sidebarToggle:visited {
+  border:0 !important;
+}
+
+// https://bootstrapious.com/p/bootstrap-sidebar
+// skusit tetnto (mozno nebude presahovat): https://www.w3schools.com/howto/howto_js_sidenav.asp
+
+// align-items: stretch ,display: flex  dolezito kvoli roztahovaniu contentu
+/*
+.wrapper {
+  // zda sa, ze tento flex sposobuje overflow a zobrazenie horizontalneho scrollbaru
+  display: flex;
+  align-items: stretch;
+  overflow-x: hidden;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+
+#sidebar h2 {
+  font-size: 0.9em;
+  margin: 5px 10px -10px 10px;
+  text-transform: uppercase;
+}
+
+#sidebar i.fa {
+  width: 30px;
+  text-align: center;
+}
+
+// toto je kvoli skryvaniu sidebaru (trochu blby nazov, lebo aktive je skryty na desktope)
+#sidebar.active {
+  margin-left: -250px;
+}
+
+// dropdowns
+#sidebar a[data-toggle="collapse"] {
+  position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+// toto je tu kvoli uprave spravania na malych displayouch (obratene spravenie .active)
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
+
+// Uprava dizajnu
+#sidebar a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar {
+  background: $theme-color-dark;
+  color: $theme-color-light;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: $theme-color-dark;
+}
+
+#sidebar ul.components {
+  padding: 10px 0;
+  border-bottom: 0;
+}
+
+#sidebar ul p {
+  color: $theme-color-light;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  border-bottom: 0;
+}
+
+// pozadie rozbalenych dropdownov
+#sidebar ul.collapse li {
+  background-color: lighten($theme-color-dark, 5) !important;
+}
+
+// ked prechadzam ponad aktivne linky (aj s onimaciou)
+#sidebar ul li a:hover {
+  color: $theme-color-light;
+  background: lighten($theme-color-dark, 10);
+  transition: all 0.3s;
+}
+
+#sidebar ul li.active > a, #sidebar a[aria-expanded="true"] {
+  color: $theme-color-light;
+  background: $theme-color-dark;
+}
+
+#sidebar ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: lighten($theme-color-dark, 5);
+}
+*/

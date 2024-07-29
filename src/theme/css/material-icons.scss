@@ -1,0 +1,14 @@
+/*
+ * https://google.github.io/material-design-icons/
+ */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Pozor, icony nebudu sediet s text, bude treba zabezpecit vertical align
+.material-icons {
+  vertical-align: bottom !important;
+  padding-top: 0px;
+  //margin-right: 3px;
+  font-size: 22px;
+}
+

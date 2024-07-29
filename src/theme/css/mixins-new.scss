@@ -1,0 +1,64 @@
+// Card variants
+@mixin card-variant($color) {
+  $header-text-color: if(lightness($color) > 75, #333, #fff);
+
+  .card-header {
+    background-color: $color;
+    color: $header-text-color;
+    border-bottom: 0;
+  }
+
+  .card-header > .dropdown > a {
+    color: $header-text-color;
+  }
+
+  .card-header [role="button"] {
+    color: $header-text-color;
+    // not selectable
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  .card-footer {
+    //background-color: lighten($header-background-color, 35);
+    background-color: $white;
+    color: if(lightness($color) > 75, #666, darken($color, 20));
+    border-top: 0;
+    border-top: 1px lighten($color, 40) solid;
+  }
+
+  border-color: $color;
+  box-shadow: $btn-box-shadow;
+}
+
+// Callout variants
+@mixin callout-variant($color) {
+  position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  @include border-radius($alert-border-radius);
+
+  $text-color: if(lightness($color) > 75, #555, darken($color, 25));
+  $border-color: if(lightness($color) > 75, #aaa, $color);
+
+  color: $text-color;
+  $lighten-value: if(lightness($color) < 20, 75, 40);
+  background-color: lighten(desaturate($color, 10), $lighten-value);
+  border: 0;
+  border-left: 5px $border-color solid !important;
+
+  //box-shadow: $btn-box-shadow;
+
+  hr {
+    border-top-color: darken($color, 5%);
+  }
+
+  .alert-link {
+    color: darken($color, 10%);
+  }
+}
+

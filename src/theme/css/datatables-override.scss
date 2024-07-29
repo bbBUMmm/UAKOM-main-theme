@@ -1,0 +1,25 @@
+/*
+ * Zahlavie tabuliek
+ */
+.table-bordered thead th, .table-bordered thead td {
+  border-bottom-width: 1px;
+  border-top-width: 0px;
+}
+
+.table tbody td {
+  color: #444;
+}
+
+.table tr.selected td {
+  color: $white !important;
+}
+
+// pocet zaznamov na stranku
+.dataTables_length  {
+  border: none !important;
+}
+
+// posun tlacidiel dole na uroven vyberu zaznamu na stranku
+.dataTables_wrapper.dt-bootstrap4.no-footer > div.row > div.col-sm-1.text-left {
+  padding-top:10px;
+}

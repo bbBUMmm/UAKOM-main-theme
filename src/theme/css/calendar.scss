@@ -1,0 +1,9 @@
+.bootstrap-datetimepicker-widget table td, .bootstrap-datetimepicker-widget table th {
+  border-radius: 0px;
+}
+
+.bootstrap-datetimepicker-widget table td.active {
+  background-color: $theme-color-primary;
+  text-shadow: none;
+  //box-shadow: $btn-box-shadow;
+}

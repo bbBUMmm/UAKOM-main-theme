@@ -1,0 +1,48 @@
+// alert - toto vymysliet kam dat - musi to ist az po originalnom mixine
+@mixin alert-variant($color) {
+  $text-color: if(lightness($color) > 75, #555, #fff);;
+
+  color: $text-color;
+  border: 0;
+
+  @include gradient-bg($color);
+
+  box-shadow: $btn-box-shadow;
+
+  hr {
+    border-top-color: darken($color, 5%);
+  }
+
+  .alert-link {
+    color: darken($color, 10%);
+  }
+}
+
+// Alerts
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant($value);
+  }
+}
+
+/*
+ * Cards
+ * zadefinoval som vlastny mixin card-variant aj ked si myslim, ze by mal byt v bootstrape standardne
+ */
+@each $color, $value in $theme-colors {
+  .card-#{$color} {
+    @include card-variant($value);
+  }
+}
+
+
+/*
+ * Callouts
+ */
+@each $color, $value in $theme-colors {
+  .callout-#{$color} {
+    @include callout-variant($value);
+  }
+}
+
+

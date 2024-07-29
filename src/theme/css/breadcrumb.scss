@@ -1,0 +1,19 @@
+nav[aria-label=breadcrumb] {
+  background-color: #e9ecef;
+
+
+  ol {
+    padding: 10px;
+    //margin: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: $theme-color-primary;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

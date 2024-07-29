@@ -1,0 +1,158 @@
+/*
+ * Bootstrap
+ */
+
+// najskor importujem kustomizovane premenne, ktore potom prepisu defaultne premenne
+@import "../theme/css/mixins-new";
+@import '../theme/css/bootstrap-custom-variables';
+@import '../theme/css/sidebar-variables';
+
+@import "~bootstrap";
+
+@import "../theme/css/mixins-override";
+
+/*
+ * DATATABLES
+ */
+// ak by nieco nefungovalo, tak je mozne naimportovat aj kompletne css so stiahnuteho balicka.
+//@import "../downloaded/DataTables/datatables.css";
+
+
+
+@import "~datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "~datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import "~datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css";
+@import "~datatables.net-searchpanes-bs5/css/searchPanes.bootstrap5.min.css";
+@import "~datatables.net-select-bs5/css/select.bootstrap5.min.css";
+@import "../theme/css/datatables-override";
+
+
+/*
+ * Tempus dominus - Datepicker
+ */
+//@import "../theme/downloaded/TempusDominus/tempusdominus-bootstrap-4.min.css";
+@import '@eonasdan/tempus-dominus/dist/css/tempus-dominus.min.css';
+.material-icons {
+  &.time::before {
+    content: 'access_time';
+  }
+  &.date::before {
+    content: 'calendar_today';
+  }
+  &.up::before {
+    content: 'arrow_drop_up';
+  }
+  &.down::before {
+    content: 'arrow_drop_down';
+  }
+  &.previous::before {
+    content: 'chevron_left';
+  }
+  &.next::before {
+    content: 'chevron_right';
+  }
+  &.today::before {
+    content: 'today';
+  }
+  &.clear::before {
+    content: 'clear';
+  }
+  &.close::before {
+    content: 'close';
+  }
+}
+
+/*
+ * Datepicker flatpickr https://flatpickr.js.org/getting-started/
+ */
+@import "flatpickr/dist/flatpickr.min.css";
+//@import "flatpickr/dist/themes/airbnb.css";
+
+// formularove prvky
+@import "../theme/css/form-overrides";
+
+// Sidebar menu
+@import "../theme/css/sidebar";
+
+// horne menu
+@import "../theme/css/top-navbar";
+
+// breadcrumb
+@import "../theme/css/breadcrumb";
+
+// badges
+@import "../theme/css/badges";
+
+// nadpisy
+@import "../theme/css/headings";
+
+// tlacidla
+@import "../theme/css/buttons";
+
+// tabs
+@import "../theme/css/tabs";
+
+/*
+ * Ikony
+ */
+@import "../theme/css/material-icons";
+@import "../theme/css/font-awesome";
+//@import "~material-icons";
+// font awesome kvoli kalendaru tempus-dominus, kym neprideme na to ako zmenit ikony.
+//@import "~font-awesome";
+
+
+/*
+ * Calendar
+ */
+@import "../theme/css/calendar";
+
+/*
+ * Slider
+ */
+@import '../theme/css/slider';
+/*
+ * Vseobecne upravy
+ */
+@import "../theme/css/general";
+
+/**
+ * Editor
+ */
+@import "../theme/css/ckeditor";
+//@import "../theme/downloaded/SummerNote/summernote.min.css";
+//@import "../theme/downloaded/SummerNote/summernote-bs4.min.css";
+//@import "../theme/downloaded/SummerNote/summernote-lite.min.css";
+
+//@import "../theme/downloaded/codemirror/lib/codemirror.css";
+//@import "../theme/downloaded/codemirror/theme/monokai.css";
+
+// zrusit tien na tlacidlach
+//.note-btn.btn-light {
+//  box-shadow: none !important;
+//}
+
+// JSTree
+//@import "../theme/downloaded/jstree/dist/themes/default/style.min.css";
+/*
+.vakata-context {
+  background-color: #fff;
+  box-shadow: $btn-box-shadow;
+}
+
+.vakata-context-hover {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: lighten($theme-color-secondary, 50) !important;
+}
+
+ */
+// JSTree
+
+
+// pokus ako pracovat s material iconami ako s font awesome (cisto cez class)
+//@import url('https://gist.githubusercontent.com/loicbisiere/31f3ee50337e305f02564ab2c67a72fa/raw/09580a05bb70771201755efe53b934b68ce389f9/material-icons.css');
+//@import '../theme/downloaded/material_icons_unicode.css';
+//@import 'material-icons/iconfont/material-icons.css';
+//@import 'font-awesome/css/font-awesome';
+

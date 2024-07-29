@@ -1,0 +1,96 @@
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+// https://www.mugo.ca/Blog/How-to-customize-Bootstrap-4-using-Sass
+// https://hub.packtpub.com/how-create-themed-bootstrap-components-sass/
+
+/*
+ * tlacidla
+ */
+$black: #000000;
+$btn-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+
+// datatables
+.dataTables_paginate.paging_simple_numbers ul.pagination li {
+  box-shadow: $btn-box-shadow;
+}
+
+/*
+ * Lokalizacia Bootstrapu (atribut lang="sk")
+ */
+$custom-file-text: (
+        en: "Browse",
+        sk: "Prehľadávať"
+);
+
+/*
+ * Fonty
+ */
+//@import "~typeface-roboto";
+/*
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+$font-family-sans-serif: Roboto;
+$font-family-monospace: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+*/
+
+/*
+ * Farebna schema
+ */
+
+$theme-color-info: #23a5d5;
+$theme-color-secondary: #777777;
+//$theme-color-primary: #3275e4;
+$theme-color-primary: #0063B1;
+$theme-color-success: #10b810;
+$theme-color-warning: #eD6E04;
+$theme-color-danger: #ef0000;
+$theme-color-light: #ffffff;
+// Indigo
+//$theme-color-dark: #052959;
+// windows dark blue
+$theme-color-dark: #002D4F;
+// Fialova
+//$theme-color-dark: #410050;
+// UMB hneda
+//$theme-color-dark: #673E2C;
+$theme-color-umb: #673E2C;
+$theme-color-purple: #410050;
+$theme-color-default: #007B5E;
+
+$theme-colors: (
+    "primary": $theme-color-primary,
+    "secondary": $theme-color-secondary,
+    "default": $theme-color-default,
+    "success": $theme-color-success,
+    "info": $theme-color-info,
+    "danger": $theme-color-danger,
+    "warning": $theme-color-warning,
+    "light": $theme-color-light,
+    "dark": $theme-color-dark,
+    "umb": $theme-color-umb,
+    "purple": $theme-color-purple
+);
+
+// uprava farieb v navbare (pouzivame dark navbar)
+$dark: $theme-color-dark;
+$white: $theme-color-light;
+
+$navbar-dark-color: rgba($white, .75);
+$navbar-dark-hover-color: rgba($white, 1);
+$navbar-dark-active-color: $white;
+$navbar-dark-disabled-color: rgba($white, .50);
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color: rgba($white, .2);
+
+// formulare
+$form-focus-shadow: 0px 1px 1px rgba(#000, 0.075) inset, 0px 0px 8px rgba($theme-color-info, 0.5);
+$form-focus-color: $theme-color-info;
+
+// nastavenia
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: false;
+
+// range slider track
+$custom-range-track-height: 0.1rem;
+$custom-range-track-box-shadow: none;

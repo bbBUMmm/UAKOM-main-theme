@@ -1,0 +1,28 @@
+/**
+ * Labely
+ */
+// Zvyraznenie povinnych poloziek vo formulari
+label.required:after {
+  color: red;
+  content: " *";
+  font-size: 1em;
+  font-weight: bold;
+}
+
+label {
+  color: theme-color("secondary");
+  font-size: 1em;
+ // margin-top: 1rem;
+}
+
+/*
+ * Formularove inputy - focus glow
+ */
+.form-control:focus {
+  border-color: $form-focus-color;
+  box-shadow: $form-focus-shadow;
+}
+
+.custom-file-label {
+  margin: 0;
+}
