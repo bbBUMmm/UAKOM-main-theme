@@ -1,0 +1,24 @@
+{
+  "name": "uakom-theme",
+  "version": "1.0.0",
+  "description": "This package provides user main UAKOM theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbBUMmm/UAKOM-main-theme.git"
+  },
+  "keywords": [
+    "uakom",
+    "uakom-js",
+    "uakom-forms"
+  ],
+  "author": "Mykyta Prykhodko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbBUMmm/UAKOM-main-theme/issues"
+  },
+  "homepage": "https://github.com/bbBUMmm/UAKOM-main-theme#readme"
+}
